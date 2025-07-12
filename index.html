@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"
+    integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK"
+    crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <header>
+    <nav class="main-header">
+      <div class="header-container d-flex justify-content-between align-items-center">
+        <button class="mobile-menu-toggle d-lg-none border-0 bg-transparent">
+          <i class="bi bi-list fs-4"></i>
+        </button>
+        <div class="brand-logo">
+          <img src="./images/Logo.png" alt="UMIKO" />
+        </div>
+
+        <!-- Menu -->
+        <ul class="menu-list d-flex list-unstyled mb-0">
+          <li class="menu-item has-submenu">
+            <a href="#">Home <i class="bi bi-chevron-down chevron-icon"></i></a>
+            <ul class="submenu list-unstyled">
+              <li><a href="#">Home 1</a></li>
+              <li><a href="#">Home 2</a></li>
+            </ul>
+          </li>
+          <li class="menu-item has-submenu">
+            <a href="#">Shop <i class="bi bi-chevron-down chevron-icon"></i></a>
+            <ul class="submenu list-unstyled">
+              <li><a href="#">Shop 1</a></li>
+              <li><a href="#">Shop 2</a></li>
+            </ul>
+          </li>
+          <li class="menu-item has-submenu">
+            <a href="#">Products <i class="bi bi-chevron-down chevron-icon"></i></a>
+            <ul class="submenu list-unstyled">
+              <li><a href="#">Product 1</a></li>
+              <li><a href="#">Product 2</a></li>
+            </ul>
+          </li>
+          <li class="menu-item has-submenu">
+            <a href="#">Pages <i class="bi bi-chevron-down chevron-icon"></i></a>
+            <ul class="submenu list-unstyled">
+              <li><a href="#">Page 1</a></li>
+              <li><a href="#">Page 2</a></li>
+            </ul>
+          </li>
+          <li class="menu-item has-submenu">
+            <a href="#">Blog <i class="bi bi-chevron-down chevron-icon"></i></a>
+            <ul class="submenu list-unstyled">
+              <li><a href="#">Blog 1</a></li>
+              <li><a href="#">Blog 2</a></li>
+            </ul>
+          </li>
+          <li class="menu-item"><a href="#">Sale</a></li>
+          <li class="menu-item">
+            <a href="#" class="btn-highlight">Buy Umino!</a>
+          </li>
+        </ul>
+
+        <!-- Icons -->
+        <div class="header-icons d-flex align-items-center gap-3">
+          <span class="icon-wrapper"><i class="bi bi-search"></i></span>
+          <span class="icon-wrapper"><i class="bi bi-person"></i></span>
+          <span class="icon-wrapper"><i class="bi bi-clock"></i></span>
+
+          <span class="icon-wrapper position-relative">
+            <i class="bi bi-heart"></i>
+            <span class="badge-icon bg-danger">2</span>
+          </span>
+
+          <span class="icon-wrapper position-relative">
+            <i class="bi bi-cart"></i>
+            <span class="badge-icon bg-warning">2</span>
+          </span>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero-section">
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="hero-slide slide-1">
+            <div class="hero-text">
+              <h1>Stylish<br />Top Trending</h1>
+              <p>So soft you don’t want to take it off.</p>
+              <button class="btn btn-dark mt-3">Explore Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="hero-slide slide-2">
+            <div class="hero-text">
+              <h1>New Collection<br />Just Arrived</h1>
+              <p>Comfort meets fashion.</p>
+              <button class="btn btn-dark mt-3">Explore Now</button>
+            </div>
+          </div>
+        </div>
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+          <div class="hero-slide slide-3">
+            <div class="hero-text">
+              <h1>New Collection 3<br />Just Arrived</h1>
+              <p>Comfort meets fashion. </p>
+              <button class="btn btn-dark mt-3">Explore Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Nút chuyển slide -->
+      <button class="carousel-control-prev custom-nav" type="button" data-bs-target="#heroCarousel"
+        data-bs-slide="prev">
+        <i class="bi bi-chevron-left"></i>
+      </button>
+
+      <!-- Next button -->
+      <button class="carousel-control-next custom-nav" type="button" data-bs-target="#heroCarousel"
+        data-bs-slide="next">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+
+      <!-- Dots -->
+      <div class="carousel-indicators position-relative text-black">
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+      </div>
+    </div>
+  </section>
+  <section class="featured-collections py-5">
+    <div class="container text-center">
+      <h2 class="section-title">Featured Collections</h2>
+      <p class="section-subtitle">
+        Elevate your style with our chic featured collection—where fashion
+        meets flair effortlessly.
+      </p>
+
+      <div class="collection-grid">
+        <!-- Cột 1 -->
+        <div class="collection-item tall" data-order-mobile="1">
+          <img src="./images/featuresClo.jpg" alt="Clothing" />
+          <span class="collection-label">Clothing</span>
+        </div>
+
+        <!-- Cột 2 -->
+        <div class="collection-item" data-order-mobile="3">
+          <img src="./images/featuresGlass.jpg" alt="Sunglasses" />
+          <span class="collection-label">Sunglasses</span>
+        </div>
+        <div class="collection-item tall" data-order-mobile="4">
+          <img src="./images/featuresSneaker.jpg" alt="Sneaker" />
+          <span class="collection-label">Sneaker</span>
+        </div>
+        <div class="collection-item" data-order-mobile="2">
+          <img src="./images/featuresBag.jpg" alt="Bags" />
+          <span class="collection-label">Bags</span>
+        </div>
+      </div>
+  </section>
+
+  <!-- arrivals -->
+  <section class="new-arrivals ">
+    <div class="container">
+
+      <h2 class="section-title">New Arrivals</h2>
+      <p class="section-subtitle">Here’s some of our new arrivals products people are in love with.</p>
+      <div class="mobile-nav-buttons">
+        <button class="nav-button left"><i class="bi bi-chevron-left"></i></button>
+        <button class="nav-button right"><i class="bi bi-chevron-right"></i></button>
+
+      </div>
+      <div class="product-grid">
+        <!-- 1 -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="./images/arrivals1.jpg" alt="Product" />
+            <span class="badge soldout">Sold Out</span>
+            <span class="badge discount">-10%</span>
+            <span class="badge preorder">Pre-Order</span>
+            <div class="product-icons">
+              <i class="bi bi-heart icons-css"></i>
+              <i class="bi bi-eye icons-css"></i>
+              <i class="bi bi-cart icons-css"></i>
+            </div>
+            <div class="mobile-sale-banner">
+              SALE 10% OFF <span class="icon">⚡</span> HOT SALE 10%
+            </div>
+          </div>
+          <div class="product-info">
+            <p class="product-title">Square Textured Striped</p>
+            <div class="stars">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-half"></i>
+            </div>
+            <div class="price">$150.00</div>
+            <div class="colors">
+              <span class="dot selected" style="background-color: #000;"></span>
+              <span class="dot" style="background-color: #b23b3b;"></span>
+              <span class="dot" style="background-color: #e0d4c2;"></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="./images/arrivals2.jpg" alt="Product" />
+            <div class="product-icons">
+              <i class="bi bi-heart icons-css"></i>
+              <i class="bi bi-eye icons-css"></i>
+              <i class="bi bi-cart icons-css"></i>
+            </div>
+          </div>
+          <div class="product-info">
+            <p class="product-title">Square Textured Striped</p>
+            <div class="stars">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <div class="price">
+              <span class="new-price">$150.00</span>
+              <span class="old-price">$490.00</span>
+            </div>
+            <div class="colors">
+              <span class="dot selected" style="background-color: #EEEEEE;"></span>
+              <span class="dot" style="background-color: #D6D6D6;"></span>
+              <span class="dot" style="background-color: #C2CADF;"></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="./images/arrivals3.jpg" alt="Product" />
+            <span class="badge discount">-10%</span>
+            <span class="badge preorder">Pre-Order</span>
+            <div class="product-icons">
+              <i class="bi bi-heart icons-css"></i>
+              <i class="bi bi-eye icons-css"></i>
+              <i class="bi bi-cart icons-css"></i>
+            </div>
+          </div>
+          <div class="product-info">
+            <p class="product-title">Square Textured Striped</p>
+            <div class="stars">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-half"></i>
+            </div>
+            <div class="price">$150.00</div>
+            <div class="colors">
+              <span class="dot selected" style="background-color: #08382C;"></span>
+              <span class="dot" style="background-color: #492919"></span>
+              <span class="dot" style="background-color: #DFD3C2"></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="./images/arrivals4.jpg" alt="Product" />
+            <div class="product-icons">
+              <i class="bi bi-heart icons-css"></i>
+              <i class="bi bi-eye icons-css"></i>
+              <i class="bi bi-cart icons-css"></i>
+            </div>
+          </div>
+          <div class="product-info">
+            <p class="product-title">Square Textured Striped</p>
+            <div class="stars">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <div class="price">$150.00</div>
+            <div class="colors">
+              <span class="dot selected" style="background-color: #08382C;"></span>
+              <span class="dot" style="background-color: #492919"></span>
+              <span class="dot" style="background-color: #DFD3C2"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <hr>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="brand-logo"><img src="./images/Logo.png" alt=""></div>
+      <div class="footer-container">
+        <div class="footer-col">
+          <p>268 St, South New York/NY 98944, United States</p>
+          <p>+222-1800-2628</p>
+          <p>blueskytechcompany@gmail.com</p>
+          <div class="social-icons">
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-tiktok"></i>
+            <i class="bi bi-x"></i>
+            <i class="bi bi-facebook"></i>
+          </div>
+          <p class="shop-follow mobile-content-none">
+            <span class="shop-icon"><i class="bi bi-heart-fill"></i></span>
+            Follow on <b style="font-size: large;" class="mb-1">shop</b>
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="toggle-header collaps">HOT CATEGORIES</h4>
+          <ul class="mobile-content-none">
+            <li>Special Offers</li>
+            <li><b style="margin-left: 8px;">Performance</b></li>
+            <li>T-shirts</li>
+            <li>Underwear</li>
+            <li>Top Brands</li>
+            <li>Online Exclusive</li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="toggle-header expands">CUSTOMER SERVICE</h4>
+          <ul>
+            <li>Privacy Policy</li>
+            <li>Refund Policy</li>
+            <li>Shipping & Return</li>
+            <li>Term & Conditions</li>
+            <li>Advanced Search</li>
+            <li>Theme FAQs</li>
+            <li>Store Locations</li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="toggle-header expands">SIGN UP TO NEWSLETTER</h4>
+          <p>Enter your email address to get $10 off your first order and free shipping.Updates infomation on Sales and
+            Offers</p>
+          <div class="newsletter mobile-content-letter">
+            <input type="email" placeholder="Enter your email...">
+            <button>SUBSCRIBE</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer cuoi -->
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="footer-bottom-inner">
+            <div class="footer-bottom-left">
+              <span>English ▼</span>
+              <span>United States (USD $) ▼</span>
+            </div>
+            <div class="footer-bottom-center">
+              <span>© 2023 Umino Store. All Rights Reserved.</span>
+            </div>
+            <div class="footer-bottom-right">
+              <div class="payment-icons">
+                <div class="payment-icon"><img src="./images/visapng.png" alt="visa" /></div>
+                <div class="payment-icon"><img src="./images/mastercard.png" alt="mastercard" /></div>
+                <div class="payment-icon"><img src="./images/discover.png" alt="discover" /></div>
+                <div class="payment-icon"><img src="./images/western.png" alt="western union" /></div>
+                <div class="payment-icon"><img src="./images/amex.png" alt="amex" /></div>
+                <div class="payment-icon"><img src="./images/cirrus.png" alt="cirrus" /></div>
+                <div class="payment-icon"><img src="./images/paypal.png" alt="paypal" /></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- just mobile -->
+      <div class="floating-buttons">
+        <button class="btn-scroll-top">
+          <i class="bi bi-chevron-double-up"></i>
+        </button>
+        <button class="btn-chat">
+          <i class="bi bi-chat-dots"></i>
+        </button>
+      </div>
+
+      <div class="bottom-nav">
+        <div class="nav-item">
+          <i class="bi bi-house"></i>
+          <span>Home</span>
+        </div>
+        <div class="nav-item">
+          <i class="bi bi-shop"></i>
+          <span>Shop</span>
+        </div>
+        <div class="nav-item">
+          <i class="bi bi-person"></i>
+          <span>Account</span>
+        </div>
+        <div class="nav-item badge-container">
+          <i class="bi bi-heart"></i>
+          <span>Wishlist</span>
+          <span class="badge2">2</span>
+        </div>
+        <div class="nav-item badge-container">
+          <i class="bi bi-cart"></i>
+          <span>Cart</span>
+          <span class="badge2">2</span>
+        </div>
+      </div>
+  </footer>
+
+</body>
+
+</html>
