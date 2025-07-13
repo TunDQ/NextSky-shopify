@@ -3,8 +3,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  font-size: 100%;
+}
+
 body {
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: "Jost";
 }
 
 a {
@@ -20,14 +24,37 @@ a {
 }
 
 .brand-logo img {
-  height: 20px;
-  width: 92px;
+  width: 69px;
+  height: auto;
+
+  object-fit: contain;
+  display: block;
 }
 
-.menu-list {
-  gap: 25px;
-  position: relative;
+.main-nav {
+  display: flex;
+  justify-content: flex-start;
 }
+.menu-list {
+  display: flex;
+  justify-content: flex-start;
+  gap: 23px;
+  padding-left: 0;
+  margin-left: 130px;
+  list-style: none;
+  margin-top: -12px;
+}
+
+.menu-list > li > a {
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1;
+  color: #111;
+  display: inline-block;
+  vertical-align: middle;
+  text-transform: none;
+}
+
 .submenu {
   display: none;
 }
@@ -39,6 +66,7 @@ a {
 .menu-item:hover .submenu {
   display: block;
   position: absolute;
+  z-index: 888;
   background-color: #fff;
   border: 1px solid #eee;
   padding: 10px;
@@ -47,11 +75,12 @@ a {
   font-weight: 500;
 }
 .menu-item a {
-  font-size: 16px;
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-  gap: 6px;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1;
+  color: #111;
+  text-transform: none;
+  display: inline-block;
 }
 
 .chevron-icon {
@@ -115,6 +144,8 @@ a {
 }
 .hero-text {
   text-align: center;
+  max-width: 500px;
+  margin-bottom: 25px;
 }
 .hero-text button {
   border-radius: 20px;
@@ -187,17 +218,19 @@ a {
 
 /* features */
 
-.section-title {
-  font-size: 28px;
-  font-weight: 600;
-  margin-bottom: 8px;
+.section-title-featured {
+  font-size: 35px;
+  font-weight: 400;
+  margin-top: -24px;
+  margin-bottom: 12px;
 }
 
-.section-subtitle {
-  color: #777;
-  font-size: 14px;
-  margin-bottom: 40px;
+.section-subtitle-featured {
+  color: #555555;
+  font-size: 13px;
+  margin-bottom: 50px;
   max-width: 600px;
+  margin-top: -12px;
   margin-inline: auto;
 }
 
@@ -252,17 +285,20 @@ a {
 .product-icons {
   display: none;
 }
-.section-title {
+.section-title-arrival {
   text-align: center;
-  font-size: 28px;
-  font-weight: 600;
+  font-size: 36px;
+  font-weight: 400;
   margin-bottom: 8px;
+  margin-left: 7px;
+  margin-top: 60px;
 }
-.section-subtitle {
+.section-subtitle-arrival {
   text-align: center;
-  color: #777;
-  font-size: 14px;
+  color: #555555;
+  font-size: 13px;
   margin-bottom: 40px;
+  margin-left: 7px;
 }
 .product-grid {
   display: grid;
@@ -391,7 +427,6 @@ a {
 .footer {
   background-color: #fff;
   padding: 60px 80px;
-  font-family: "Inter", sans-serif;
   font-size: 13px;
   color: #333;
 }
@@ -520,6 +555,7 @@ a {
 .footer-bottom {
   border-top: 1px solid #eee;
   padding: 20px 0;
+  margin-top: 70px;
   font-size: 13px;
   color: #666;
 }
@@ -652,31 +688,38 @@ a {
     display: none !important;
   }
   .hero-slide {
-    flex-direction: column;
-    height: auto;
-    padding: 32px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 700px;
+    background-size: cover;
+    background-position: center;
   }
 
   .hero-text {
+    max-width: 400px;
     text-align: left;
-    width: 100%;
+    padding-top: 30px;
+    margin-left: -30px;
   }
 
   .hero-text h1 {
-    font-size: 27px;
-    line-height: 1.3;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 45px;
+    margin-bottom: 12px;
   }
 
   .hero-text p {
-    font-size: 12px;
-    margin-top: 8px;
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
   }
 
   .hero-text button {
-    font-size: 14px;
-    padding: 10px 20px;
+    padding: 12px 40px;
+    font-size: 15px;
     border-radius: 999px;
-    margin-top: 16px;
   }
 
   .carousel-indicators {
